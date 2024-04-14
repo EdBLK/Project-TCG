@@ -34,7 +34,11 @@
   },
   "name":"Project TCG",
   "resources":[
+    {"id":{"name":"obj_deck","path":"objects/obj_deck/obj_deck.yy",},},
+    {"id":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_cartas_verso","path":"sprites/spr_cartas_verso/spr_cartas_verso.yy",},},
+    {"id":{"name":"spr_cartas","path":"sprites/spr_cartas/spr_cartas.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
