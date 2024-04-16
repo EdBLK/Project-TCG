@@ -29,7 +29,9 @@ if position_meeting(mouse_x, mouse_y, self){
 			
 			var _card = global.deck[| 0];
 			var _inst = instance_create_layer(mouse_x, mouse_y, "Instances", obj_card);
+			
 			_inst.image_index = _card - 1;
+			_inst.nome = global.grid_deck[# 0, _inst.image_index];
 			
 		card_select = _inst;
 		ds_list_delete(global.deck, 0);
