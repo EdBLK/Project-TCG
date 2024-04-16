@@ -19,19 +19,27 @@ repeat(num_card){
 
 #endregion
 
+enum CARDS{
+	NOME,
+	ATAQUE,
+	VIDA,
+	ALTURA
+}
+
 #region Grid
 
-global.grid_deck = ds_grid_create(3, 10);
-scr_grid_add_card(0, "Um", 1, 1);
-scr_grid_add_card(1, "Dois", 2, 2);
-scr_grid_add_card(2, "Tres", 3, 3);
-scr_grid_add_card(3, "Quatro", 4, 4);
-scr_grid_add_card(4, "Cinco", 5, 5);
-scr_grid_add_card(5, "Seis", 6, 6);
-scr_grid_add_card(6, "Sete", 7, 7);
-scr_grid_add_card(7, "Oito", 8, 8);
-scr_grid_add_card(8, "Nove", 9, 9);
-scr_grid_add_card(9, "Dez", 10, 10);
+global.grid_deck = ds_grid_create(CARDS.ALTURA, 0);
+scr_grid_add_card("Um", 1, 1);
+scr_grid_add_card("Dois", 2, 2);
+scr_grid_add_card("Tres", 3, 3);
+scr_grid_add_card("Quatro", 4, 4);
+scr_grid_add_card("Cinco", 5, 5);
+scr_grid_add_card("Seis", 6, 6);
+scr_grid_add_card("Sete", 7, 7);
+scr_grid_add_card("Oito", 8, 8);
+scr_grid_add_card("Nove", 9, 9);
+scr_grid_add_card("Dez", 10, 10);
+
 #endregion
 
 card_select = 0;
